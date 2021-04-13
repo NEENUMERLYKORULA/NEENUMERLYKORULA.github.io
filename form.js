@@ -92,6 +92,7 @@ function phone_Verify() {
 }
 function chk_Verify() {
     if (terms.checked){
+        alert ("YAHHH");
         return true;
     }
 }

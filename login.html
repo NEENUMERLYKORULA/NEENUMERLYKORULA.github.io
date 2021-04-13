@@ -144,14 +144,14 @@
           <div class="signup-link">
             Not a member? <a href="">Signup now</a></div>
         </form>
-        <form action="index.html" class="signup" name="form1" onsubmit="return validate()">
+        <form action="login.html" class="signup" name="form1" onsubmit="return validate()">
           <div class="field"><input type="text" placeholder="Email Address" name="emailid"><br></div>
           <div id="emailid_error">Please enter a valid email address</div>
           <div class="field"><input type="text" placeholder="phone number" name="phone"></div>
           <div id="ph_error">invalid format</div>
           <div class="container">
             <div class="field">
-              <input type="password" onkeyup="trigger()" placeholder="Type password" id="txtpwd" name="txtpwd">
+              <input type="password" onkeyup="trigger()" placeholder="Type password" id="txtpwd" name="txtpwd" required>
               <span class="showBtn">SHOW</span>
             </div>
             
@@ -168,7 +168,7 @@
         
           </div> -->
           <label>
-            <input type="checkbox" name="terms">By signing up to {this} you agree to your
+            <input type="checkbox" name="chkbox">By signing up to this you agree to your
              <a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a>
           </label>
           <div class="field btn">
