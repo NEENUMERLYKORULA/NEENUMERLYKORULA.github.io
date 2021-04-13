@@ -168,11 +168,11 @@ nav ul li a {
   }
 
   nav.black ul {
-        background:rgb(22, 19, 194);
+        background:rgb(205, 205, 230);
   }
 
   .showing {
-        max-height: 25em;
+        max-height: 24em;
         background-color:rosybrown;
     
         
