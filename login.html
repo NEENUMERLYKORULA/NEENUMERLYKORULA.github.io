@@ -106,7 +106,7 @@
 </header>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper"> 
     <div class="title-text">
       <div class="title login">Login Form</div>
       <div class="title signup">Signup Form</div>
@@ -126,7 +126,7 @@
           <div class="field">
             <input type="text" placeholder="Email Address" name="email">
           </div>
-          <div id="email_error">Please fill up your Email or Phone</div>
+          <div id="email_error">Please fill up your Email id</div>
           <br>
           <!-- <label for="error" id="error"></label> -->
           <div class="field">
@@ -142,12 +142,12 @@
             <input type="submit" value="Login">
           </div>
           <div class="signup-link">
-            Not a member? <a href="">Signup now</a></div>
+            Not a member? <a href="#form1">Signup now</a></div>
         </form>
         <form action="login.html" class="signup" name="form1" onsubmit="return validate()">
           <div class="field"><input type="text" placeholder="Email Address" name="emailid"><br></div>
           <div id="emailid_error">Please enter a valid email address</div>
-          <div class="field"><input type="text" placeholder="phone number" name="phone"></div>
+          <div class="field"><input type="text" placeholder="phone number" name="phone"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"></div>
           <div id="ph_error">invalid format</div>
           <div class="container">
             <div class="field">
@@ -251,7 +251,7 @@
     const strong = document.querySelector(".strong");
     const text = document.querySelector(".text");
     const showBtn = document.querySelector(".showBtn");
-    let regExpWeak = /[a-z]/;
+    let regExpWeak = /[A-Z,a-z]/;
     let regExpMedium = /\d+/;
     let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
     var txtpwd = document.getElementById('txtpwd');
@@ -260,8 +260,8 @@
         indicator.style.display = "block";
         indicator.style.display = "flex";
         if (txtpwd.value.length <= 3 && (txtpwd.value.match(regExpWeak) || txtpwd.value.match(regExpMedium) || txtpwd.value.match(regExpStrong))) no = 1;
-        if (txtpwd.value.length >= 6 && ((txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpMedium)) || (txtpwd.value.match(regExpMedium) && txtpwd.value.match(regExpStrong)) || (txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpStrong)))) no = 2;
-        if (txtpwd.value.length >= 6 && txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpMedium) && txtpwd.value.match(regExpStrong)) no = 3;
+        if (txtpwd.value.length >= 8 && ((txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpMedium)) || (txtpwd.value.match(regExpMedium) && txtpwd.value.match(regExpStrong)) || (txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpStrong)))) no = 2;
+        if (txtpwd.value.length >= 8 && txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpMedium) && txtpwd.value.match(regExpStrong)) no = 3;
         if (no == 1) {
           weak.classList.add("active");
           text.style.display = "block";

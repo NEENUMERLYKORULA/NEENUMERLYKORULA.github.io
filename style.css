@@ -144,6 +144,11 @@ html, body {
             margin-top: 16px;
             width: 20px;
       }
+      /* #main{
+        left: auto;
+        right: auto;
+        
+      } */
   
       nav ul {
             max-height: 0px;

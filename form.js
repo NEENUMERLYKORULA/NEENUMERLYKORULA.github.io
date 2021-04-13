@@ -28,7 +28,7 @@ function login_validated() {
         email.focus();
         return false;
     }
-    if (pwd.value.length < 6) {
+    if (pwd.value.length < 8) {
         pwd.style.border = "1px solid red";
         pass_error.style.display = "block";
         pwd.focus();

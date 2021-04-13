@@ -16,26 +16,7 @@
       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script>
-           $(document).ready(function() {
-            $(".menu-icon").click(function() {
-                  $("nav ul").toggleClass("showing");
-                  $("ul li").toggleClass("hide");
-                  $(".menu-icon").toggleClass("hide");
-            });
-      // Scrolling Effect
-
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('nav').addClass('black');
-            }
-
-            else {
-                  $('nav').removeClass('black');
-            }
-      });
-    });
-      </script>
+      
 <style>
          .dropdown:hover .dropdown-content {
     display: block;
@@ -118,7 +99,7 @@
                      <ul>
                       <li><a  href="#">Home</a></li>
                       <li><a href="#main">Discover</a></li>
-                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#gallery">Gallery</a></li>
                       <li id="drp">
                      <li><a href="login.html">Login</a></li>
                                    
@@ -253,12 +234,31 @@
     <section class="gallery" id="gallery">
       <div class="container py-5">
         <h2 class="lined mb-4">Portfolio</h2>
-        <p class="lead">You can make also a portfolio or image gallery.</p>
+        <p class="lead">image gallery.</p>
         <div class="row"><a href="images/ptf1.jpg" data-lightbox="gallery" data-title="Description of Project No.1" class="col-lg-4 col-sm-6 p-0"><img src="images/ptf2.jpg" alt="" class="img-fluid"></a><a href="images/ptf3.jpg" data-lightbox="gallery" data-title="Description of Project No.2" class="col-lg-4 col-sm-6 p-0"><img src="images/ptf4.jpg" alt="" class="img-fluid"></a><a href="images/ptf5.jpg" data-lightbox="gallery" data-title="Description of Project No.3" class="col-lg-4 col-sm-6 p-0"><img src="images/ptf6.jpg" class="img-fluid"></a><a href="images/ptf7.jpg" data-lightbox="gallery" data-title="Description of Project No.4" class="col-lg-4 col-sm-6 p-0"><img src="images/ptf8.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-5.jpg" data-lightbox="gallery" data-title="Description of Project No.5" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-5.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-6.jpg" data-lightbox="gallery" data-title="Description of Project No.6" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-6.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-7.jpg" data-lightbox="gallery" data-title="Description of Project No.7" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-7.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-8.jpg" data-lightbox="gallery" data-title="Description of Project No.8" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-8.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-9.jpg" data-lightbox="gallery" data-title="Description of Project No.9" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-9.jpg" alt="" class="img-fluid"></a>
         </div>
       </div>
     </section>
+<script>
+  $(document).ready(function() {
+            $(".menu-icon").click(function() {
+                  $("nav ul").toggleClass("showing");
+                  $("ul li").toggleClass("hide");
+                  $(".menu-icon").toggleClass("hide");
+            });
+      // Scrolling Effect
 
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      });
+    });
+</script>
 
 
 

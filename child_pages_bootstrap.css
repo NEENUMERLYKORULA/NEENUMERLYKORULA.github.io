@@ -150,6 +150,7 @@ nav ul li a {
   }
 
 @media(max-width: 786px) {
+    
 
     .logo {
         position: fixed;
