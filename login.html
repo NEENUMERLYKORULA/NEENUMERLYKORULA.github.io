@@ -49,6 +49,24 @@
         }
       });
     });
+    //Remove white spaces...
+    $(function() {
+        $('#txtpwd').on('keypress', function(e) {
+            if (e.which == 32){
+                console.log('Space Detected');
+                return false;
+            }
+        });
+});
+
+$(function() {
+        $('#txt2pwd').on('keypress', function(e) {
+            if (e.which == 32){
+                console.log('Space Detected');
+                return false;
+            }
+        });
+});
   </script>
   <style>
     .banner {
@@ -130,7 +148,7 @@
           <br>
           <!-- <label for="error" id="error"></label> -->
           <div class="field">
-            <input type="password" placeholder="Password" name="pwd">
+            <input type="password" placeholder="Password" name="pwd"  id="txt2pwd">
           </div>
           <div id="pass_error">Please fill up your Password</div>
           <div class="pass-link">
@@ -244,6 +262,7 @@
     const loginBtn = document.querySelector("label.login");
     const signupBtn = document.querySelector("label.signup");
     const signupLink = document.querySelector("form .signup-link a");
+
     const indicator = document.querySelector(".indicator");
     const input = document.querySelector("input");
     const weak = document.querySelector(".weak");
