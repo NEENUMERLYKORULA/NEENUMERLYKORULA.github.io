@@ -318,8 +318,7 @@ form .btn input[type="submit"]{
 @media(max-width: 786px) {
   .wrapper{
     margin: 30px;
-    /* padding-left: 20%; */
-    /* padding-right: 20%;  */
+   
    left: auto;
    right:auto;
   }
