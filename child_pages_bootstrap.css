@@ -154,6 +154,8 @@ nav ul li a {
 
     .logo {
         position: fixed;
+        left: auto;
+        right: auto;
         top: 0;
         margin-top: 16px;
         width: 20px;

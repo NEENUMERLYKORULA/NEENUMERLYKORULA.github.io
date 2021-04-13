@@ -141,8 +141,10 @@ html, body {
       .logo {
             position: fixed;
             top: 0;
+            left: auto;
+            right: auto;
             margin-top: 16px;
-            width: 20px;
+            width: 10px;
       }
      
   

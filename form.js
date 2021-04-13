@@ -1,4 +1,4 @@
-//Validtion Code For Inputs
+//Validtion Code For Inputs...
 let regexp = /^[\w._-]+[+]?[\w._-]+@[\w.-]+\.[a-zA-Z]{2,6}$/;
 var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
