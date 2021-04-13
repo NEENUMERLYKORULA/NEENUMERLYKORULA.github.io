@@ -118,7 +118,7 @@ html, body {
   
   nav ul li a {
       text-decoration: none;
-      color:#fff;
+      color:rgb(48, 35, 35);
       font-size: 16px;
   }
   
@@ -130,7 +130,7 @@ html, body {
       /* box-sizing: border-box;
       padding: 15px 24px;
       cursor: pointer; */
-      color: rgb(7, 0, 0);
+      color: rgb(9, 2, 34);
       display:none;
   }
 .menu-icon.hide i:before{
