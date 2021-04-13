@@ -130,7 +130,7 @@ html, body {
       /* box-sizing: border-box;
       padding: 15px 24px;
       cursor: pointer; */
-      color: #fff;
+      color: rgb(7, 0, 0);
       display:none;
   }
 .menu-icon.hide i:before{
@@ -150,7 +150,7 @@ html, body {
   
       nav ul {
             max-height: 0px;
-            background: rgb(16, 204, 63);
+            background:rosybrown;
       }
   
       nav.black ul {
@@ -159,7 +159,8 @@ html, body {
   
       .showing {
             max-height: 25em;
-            background-color: yellow;
+            background-color: rosybrown;
+            text-emphasis-color: black;
       }
   
       nav ul li {
@@ -171,7 +172,7 @@ html, body {
     
       .menu-icon {
             display: block;
-  
+              
       }
       nav ul li:hover{
             border-radius: 2px;
