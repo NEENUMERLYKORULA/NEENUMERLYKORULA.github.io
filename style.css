@@ -1,0 +1,183 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+  }
+  
+  body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+  }
+  #drp{
+      
+            list-style-type: none;
+            overflow:none;
+        
+        
+      
+            float:right;
+                    }
+                    a:link {
+                        text-decoration: none;
+                      }
+  /* Style all font awesome icons */
+  .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    
+    /* Set a specific color for each brand */
+    
+    /* Facebook */
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    /* Twitter */
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+  .py-5{
+      
+      /* background-image: url("images\portfolio-7.jpg") no-repeat 50% 50%; */
+      background-color:aliceblue;
+    
+  }
+  header {
+      width: 100%;
+      height: 100vh;
+      background: url(./images/A-sunset-over-Chinese-fishing-nets-by-a-canoe-in-Cochin.jpg) no-repeat 50% 50%;
+      background-size: cover;
+  }
+  
+  .content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+  }
+  
+  .logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      /* margin: 16px 46px; */
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+  }
+  .banner{
+    background-color:yellowgreen;
+    font-style: normal;
+    font-weight: bolder;
+    align-content: center;
+    white-space: normal;
+    
+  }
+  
+  nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+  }
+  
+  nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: transparent;
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+  }
+  
+  nav.black ul {
+      background:blanchedalmond;
+  }
+  
+  nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color:#fff;
+      font-size: 16px;
+  }
+  
+  .menu-icon {
+      /* line-height: 60px;
+      width: 100%;
+      background:rgb(211, 23, 33); */
+      text-align: right;
+      /* box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer; */
+      color: #fff;
+      display:none;
+  }
+.menu-icon.hide i:before{
+      content: '\f00d';
+    }
+  @media(max-width: 786px) {
+  
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+            width: 20px;
+      }
+  
+      nav ul {
+            max-height: 0px;
+            background: rgb(16, 204, 63);
+      }
+  
+      nav.black ul {
+            background:wheat;
+      }
+  
+      .showing {
+            max-height: 25em;
+            background-color: yellow;
+      }
+  
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px;
+            text-align: center;
+      }
+    
+      .menu-icon {
+            display: block;
+  
+      }
+      nav ul li:hover{
+            border-radius: 2px;
+            box-shadow: inset 0 0 5px #33ffff,
+                        inset 0 0 10px #66ffff;
+          }
+          nav ul li:hover:after{
+            opacity: 0;
+          }
+  
+  }
+  

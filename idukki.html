@@ -1,0 +1,201 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Idukki</title>
+      <!-- <link rel="stylesheet" href="style.css"> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="child_pages_bootstrap.css">
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script>
+           $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>
+      <style>
+        .banner {
+           height: 100vh;
+           width: 100%;
+          /* Flexbox */
+          display: flex;
+          background-size: cover;
+          /* background: url(./images/portfolio-7.jpg) no-repeat 50% 50%; */
+          /* align-items: center; */
+          }
+         h5{
+            font-family: Lobster monospace;
+            text-align:inherit;
+            background-color: yellow;
+            text-orientation: inherit;
+            /* inline-size: initial; */
+         }
+         
+      </style>
+   </head>
+   <body>
+      
+  <header>
+     
+      <div class="container-lg">
+         <h5><center>Coronavirus COVID-19 - Travel Information                 
+            <button> More Info</button> </center>       </h5>
+      </div>  
+      <div class="container.fluid">
+        <nav>
+           <div class="menu-icon">
+              <i class="fa fa-bars fa-2x"></i>
+           </div>
+           <div class="logo">
+              <a href="index.html"><img src="./images/childlogo.png" alt="" class="img-responsive"></a>
+           </div>
+           <div class="menu">
+              <ul>
+              <li><a  href="index.html">Home</a></li>
+              <li><div onClick="window.location.href='index.html#main';">Discover</div></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Map</a></li>
+              <li><a href="index.html">Login</a></li>
+              </ul>
+           </div>
+        </nav>
+     </div>   
+  </header>
+  <div class="container-lg">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video id="video" muted autoplay="autoplay" loop="loop" preload="auto"  width="100%" height="75%">
+          <source src="images/idukki.mp4"> </source>
+        </video>        
+        <div class="carousel-caption d-none d-md-block">
+          <h3>IDUKKI</h3>
+          <p></p>
+          <li>“All the videos,songs used in the video belong to their respective owners."</li>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/idukki.jpg" alt="Second slide" width="100%" height="75%" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h3></h3>
+          <p>Main Tourist attractions</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Munnar-India.jpg" width="100%" height="75%" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Munnar</h3>
+          <h6> Munnar rises as three mountain streams merge  - Mudrapuzha, Nallathanni and Kundala. 1,600 m above sea level, this hill station was once the summer resort of the erstwhile British Government in South India. One of the most sought after honeymoon destinations in Kerala, Munnar is replete with resorts and logding facilities that fit a wide rage of budgets. Sprawling tea plantations, picturesque towns, winding lanes and holiday facilities make this a popular resort town. </h6>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+  <hr>
+  <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+    <p style="text-align: justify;">A gem in the lap of the mighty Western Ghats, Idukki boasts of being one of the evergreen and pristine districts in Kerala. Canopied by lush vegetation, this part of ‘India’s Backwater Capital’ has a unique charm and attracts visitors from almost all the corners of the globe.
+
+        Home to numerous natural marvels, lofty peaks like Anamudi and others, captivating sanctuaries, and spice gardens, this surreal part of Kerala is a must for every nature lovers. To note here, many of the popular Kerala tourist destinations like Munnar, Vagamon, Ramakkalmedu, Marayur, and Thekkady are located within this district.</p>
+    
+    <!-- <a href="#about" class="btn-get-started scrollto">Read More</a> -->
+  </div>
+            
+  <footer class="pt-5" style="background: beige;">
+        <div class="container py-5">
+          <div class="row">
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h4 class="lined lined-dark mb-3">Popular Categories</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="footer-link text-small">Plans</a></li>
+                <li><a href="#" class="footer-link text-small">Discover</a></li>
+                <li><a href="#" class="footer-link text-small">Gallery</a></li>
+                <li><a href="#" class="footer-link text-small">About us</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h4 class="lined lined-dark mb-3">Connect us</h4>
+              <ul class="list-inline">
+                <!-- Add font awesome icons -->
+                    
+                   
+                <li class="list-inline-item"><a href="#" class="fa fa-facebook"></a></i></a></li>
+                <li class="list-inline-item"> <a href="#" class="fa fa-twitter"></a></i></a></li>
+                <li class="list-inline-item"><a href="#" class="fa fa-youtube-square"></a></i></a></li>
+                <li class="list-inline-item"> <a href="#" class="fa fa-instagram"></a></i></a></li>
+                <li class="list-inline-item"> <a href="#" class="fa fa-pinterest"></a></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <h4 class="lined lined-dark mb-3">News and Updates</h4>
+              <p class="text-muted mb-4 text-small">Sign up to get weekly portion of fresh jobs and news from us.
+                <form action="#">
+                  <div class="input-group mb-3">
+                    <input type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" class="form-control">
+                    <div class="input-group-append">
+                      <button id="basic-addon2" type="submit" class="input-group-text"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-dark py-4" style="background-color: gray;">    
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 text-center text-lg-left mb-1 mb-lg-0" style="background-color: gray;">
+                <p class="small text-white mb-0">©2021 Best company</p>
+              </div>
+              <div class="col-lg-6 text-center text-lg-right">
+                <p class="small text-white mb-0">Copyright Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+</body>
+</html>
+
+         

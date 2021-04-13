@@ -1,0 +1,323 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Kerala Tourism</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script>
+           $(document).ready(function() {
+            $(".menu-icon").click(function() {
+                  $("nav ul").toggleClass("showing");
+                  $("ul li").toggleClass("hide");
+                  $(".menu-icon").toggleClass("hide");
+            });
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      });
+    });
+      </script>
+<style>
+         .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+   width: 70px;
+    size: 50px;
+    height: 100px;
+    /* display: inline-block; */
+}
+#drp{
+      
+      list-style-type: none;
+      overflow:none;
+  
+  
+
+      float:right;
+  }
+
+.dropdown-content {
+  display: none;
+    position:fixed;
+    
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    border:1px solid rgb(107, 0, 0);
+}
+
+
+/* a:hover {
+  background-color: grey;
+ }
+  */
+
+
+
+.dropdown{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: -140px -160px;
+    text-decoration: none;
+}
+
+ /* .dropdown:hover{
+    background-color: grey;
+}  */
+
+
+         h5{
+            font-family: Lobster monospace;
+            text-align:inherit;
+            background-color: yellow;
+            text-orientation: inherit;
+            /* inline-size: initial; */
+         }
+         
+      </style>
+   </head>
+   <body>
+      <header>
+      <div class="container-lg">
+         <h5><center>Coronavirus COVID-19 - Travel Information                 
+            <button> More Info</button> </center>       </h5>
+      </div>  
+            <div class="container.fluid">
+               <nav>
+                  
+                  <div class="logo">
+                     <a href="index.html"><img src="./images/imageedit_4_5851263042.png" alt="" class="img-responsive"></a>
+                  </div>
+                  <div class="menu">
+                     <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                 </div>
+                     <ul>
+                      <li><a  href="#">Home</a></li>
+                      <li><a href="#main">Discover</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li id="drp">
+                     <li><a href="login.html">Login</a></li>
+                                   
+               </nav>
+            </div>
+         </header>
+    <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+   <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+     <img src="images\time-location.png" > KERALA
+     <img src="images\time.png">
+     <p>Famous for its natural beauty, Kerala is often called ‘God’s Own Country’. Sandwiched between the Arabian Sea and the Western Ghats, there are many reasons to visit Kerala, from its rich culture to its lush green hills, serene backwaters and pristine beaches.
+
+      Kerala is also known for its Ayurvedic treatments and delicious cuisine, as well as its many spice and tea plantations. Almost every corner of the state is remarkable in its own way.</p>
+     
+     <a href="#about" class="btn-get-started scrollto">Read More</a>
+   </div>
+ </section><!-- End Hero -->
+
+
+
+    <!-- CONTENT STARTS HERE */ -->
+
+
+    <main id="main">
+        
+      <section class="bg-gray py-5">
+        <div class="container py-5">
+          <div class="row" >
+            <div class="col-sm-3"><a href="child_generic.html" class="d-block"><img src="images\Sri-Padmanabhaswamy-temple-in-Trivandrum-Kerala-India.jpg" alt="" class="img-fluid mb-4"></a>
+                      <h3 class="h5 mb-4"><a href="child_generic.html" class="text-dark">Thiruvanathapuram</a></h3>
+                      <p class="text-small">Thiruvananthapuram (or Trivandrum) is the capital of the southern Indian state of Kerala. It's distinguished by its British colonial architecture and many art galleries. It’s also home to Kuthira Malika (or Puthen Malika) Palace, adorned with carved horses and displaying collections related to the Travancore royal family</p><a href="child_generic.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+                    </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="kollam.html" class="d-block"><img src="images/kollam.jpg" alt="" class="img-fluid mb-4"></a>
+                <h3 class="h5 mb-4"><a href="kollam.html" class="text-dark">Kollam</a></h3>
+                <p class="text-small">Kollam has been on the route map of spice traders for a very long time. Legendary explorers like Ibn Battuta to Marco Polo have talked about the prominence of Kollam district for centuries. Endowed with a long and scenic coastline, Kollam has many peaceful and scenic places to offer.it is also one of the best places to go cruising in the backwaters. </p><a href="kollam.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+              </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="pta.html" class="d-block"><img src="images/pta.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="pta.html" class="text-dark">Pathanmthitta</a></h3>
+              <p class="text-small">Pathanamthitta is close to the Western Ghats and is endowed with scenic landscape comprising of low undulating hills, extensive stretches of lush forests, rivers and charming countryside. Sabarimala is the famous pilgrim center situated in Pathanamthitta. Aranmula, Konni elephant training camp, Pandalam, Perumthenaruvi Waterfall.</p><a href="pta.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="Alleppey.html" class="d-block"><img src="images/alleppey.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="Alleppey.html" class="text-dark">Alleppey</a></h3>
+              <p class="text-small"> Alappuzha has always been a vital trade centre since ancient times. These days it has become one of the most sought out tourist destinations in the State. Thanks to its unique backwaters, boat races, beaches and an assortment of marine products, it is a must visit for all who seek to explore Kerala's vast beauty.</p><a href="Alleppey.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            </div>
+            <!-- /.row -->
+         </div>
+         <!-- /.container -->
+         <hr>
+         <div class="container">
+          <div class="row">
+            <div class="col-sm-3"><a href="kottayam.html" class="d-block"><img src="images/ktm.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="kottayam.html" class="text-dark">Kottayam</a></h3>
+              <p class="text-small"> Owing to its natural beauty and its rich cultural heritage, Kottayam has been a popular tourist destination. Thousands of tourists come to this city every year to relax and to experience the opulent cultural values of Kerala. The Poonjar Palace is an example of the rich culture of Kerala. Kottayam has many temple and shrines to be discovered by visitors.</p><a href="kottayam.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="ernakulam.html" class="d-block"><img src="images/eklm.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="ernakulam.html" class="text-dark">Ernakulam</a></h3>
+              <p class="text-small">Soaked in history and the many different grandeurs of Kerala, Ernakulam is one of the most stunning destinations in God’s Own Country! The once a capital of the Kingdom of Cochin, this township is a major commercial area in Kochi and is also called the ‘Commercial Capital of Kerala’.
+
+</p><a href="ernakulam.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="idukki.html" class="d-block"><img src="images/idukki.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="idukki.html" class="text-dark">Idukki</a></h3>
+              <p class="text-small">Idukki district is a densely forested, mountainous region in the south Indian state of Kerala. In the north, Anamudi mountain towers over Eravikulam National Park, where the rare, blue Neelakurinji flower blooms every 12 years. Nearby, Munnar is a hill station known for its sprawling tea plantations and Tea Museum. </p><a href="idukki.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="Thrissur.html" class="d-block"><img src="images/thrissur.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="Thrissur.html" class="text-dark">Thrissur</a></h3>
+              <p class="text-small"> The fourth largest city in Kerala, Thrissur or Trichur is the ‘Cultural Capital’ of God’s Own Country. The once a capital of the Kingdom of Cochin, this metropolis is a plethora of history, rustic cultures, devout beliefs, and colourful traditions.</p><a href="Thrissur.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            </div>
+            <!-- /.row -->
+         </div>
+         <!-- /.container -->
+         <hr>
+         <div class="container">
+          <div class="row">
+            <div class="col-sm-3"><a href="palakkad.html" class="d-block"><img src="images/palakkad.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="palakkad.html" class="text-dark">Palakkad</a></h3>
+              <p class="text-small">Well, not all the tourist destinations in Kerala is all about scenic coastlines; Palakkad is just one of them! Though this city is deprived of any coastal line, it has something distinctive that makes it a must visit place! Palakkad is the ‘Gateway to Kerala’; it connects the India’s Spice Captial with other parts of the country..</p><a href="palakkad.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="calicut.html" class="d-block"><img src="images/calicut.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="calicut.html" class="text-dark">Calicut</a></h3>
+              <p class="text-small">Kozhikode is a coastal city in the south Indian state of Kerala. It was a significant spice trade center and is close to Kappad Beach, where Portuguese explorer Vasco da Gama landed in 1498. The central Kozhikode Beach, overlooked by an old lighthouse, is a popular spot for watching the sunset. Inland, tree-lined Mananchira Square, with its musical fountain.</p><a href="calicut.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="wayanad.html" class="d-block"><img src="images/wayanad.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="wayanad.html" class="text-dark">Wayanad</a></h3>
+              <p class="text-small">The natural scenic beauty of Wayanad and its rich natural resources offer several opportunities for adventure tourism. The hills rocks and valley which make the very unique character of Wayanad provide a lot for catering to the ever increasing demand for adventure tourist.Trekking to the Chembra peak is one of the risky tourist endeavours.  </p><a href="wayanad.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="Mallapuram.html" class="d-block"><img src="images/malappuram.png" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="Mallapuram.html" class="text-dark">Malappuram</a></h3>
+              <p class="text-small">Best of Malappuram tourist places include names of Kottakkunnu, Kadalundi Bird Sanctuary, Keralam Kundu Waterfalls, Nedumkayam, Arimbra Hills, Adyanpara Waterfalls, and many others to explore. There are a number of elements that make up the city of Malappuram a favorite among tourists. </p><a href="Mallapuram.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            </div>
+            <!-- /.row -->
+         </div>
+         <!-- /.container -->   
+         <hr>
+         <div class="container">
+          <div class="row">
+            <div class="col-sm-3"><a href="Kannur.html" class="d-block"><img src="images/kannur.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="Kannur.html" class="text-dark">Kannur</a></h3>
+              <p class="text-small">Famous as Kerala’s only drive-in beach, the Muzhappilangad offers some of the most stunning views of the yellow and orange sun setting along the golden sandy beaches of Malabar coast. 
+
+                The 4 km stretch of land running along the ocean is perfect for taking a romantic, leisurely stroll with your partner or just drive on the beach and soak in the naked natural splendour around.  </p><a href="Kannur.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            <!-- /.col-sm-3 -->
+            <div class="col-sm-3"><a href="Kasaragod.html" class="d-block"><img src="images/ksg.jpg" alt="" class="img-fluid mb-4"></a>
+              <h3 class="h5 mb-4"><a href="Kasaragod.html" class="text-dark">Kasaragod</a></h3>
+              <p class="text-small"> 
+                The northern most district of Kerala, Kasaragod is situated on the sea coast bordered by hilly Kodagu and Mangalore districts of Karnataka in the east and north. Fishing is a prime source of livelihood along with the coir and handloom industries. With its unique natural and cultural attractions Kasaragod is known as the land of gods, forts, rivers, hills and beautiful beaches.</p><a href="Kasaragod.html" class="btn btn-outline-primary btn-sm">Continue reading</a>
+            </div>
+            </div>
+            </div>
+            
+          
+      </section>
+         
+    </main>
+    <section class="gallery" id="gallery">
+      <div class="container py-5">
+        <h2 class="lined mb-4">Portfolio</h2>
+        <p class="lead">You can make also a portfolio or image gallery.</p>
+        <div class="row"><a href="images/ptf1.jpg" data-lightbox="gallery" data-title="Description of Project No.1" class="col-lg-4 col-sm-6 p-0"><img src="images/ptf2.jpg" alt="" class="img-fluid"></a><a href="images/ptf3.jpg" data-lightbox="gallery" data-title="Description of Project No.2" class="col-lg-4 col-sm-6 p-0"><img src="images/ptf4.jpg" alt="" class="img-fluid"></a><a href="images/ptf5.jpg" data-lightbox="gallery" data-title="Description of Project No.3" class="col-lg-4 col-sm-6 p-0"><img src="images/ptf6.jpg" class="img-fluid"></a><a href="images/ptf7.jpg" data-lightbox="gallery" data-title="Description of Project No.4" class="col-lg-4 col-sm-6 p-0"><img src="images/ptf8.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-5.jpg" data-lightbox="gallery" data-title="Description of Project No.5" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-5.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-6.jpg" data-lightbox="gallery" data-title="Description of Project No.6" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-6.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-7.jpg" data-lightbox="gallery" data-title="Description of Project No.7" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-7.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-8.jpg" data-lightbox="gallery" data-title="Description of Project No.8" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-8.jpg" alt="" class="img-fluid"></a><a href="img/portfolio-9.jpg" data-lightbox="gallery" data-title="Description of Project No.9" class="col-lg-4 col-sm-6 p-0"><img src="img/portfolio-9.jpg" alt="" class="img-fluid"></a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    
+
+         
+   </body>
+   <footer class="pt-5" style="background: beige;">
+    <div class="container py-5">
+      <div class="row">
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4 class="lined lined-dark mb-3">Popular Categories</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link text-small">Plans</a></li>
+            <li><a href="#" class="footer-link text-small">Discover</a></li>
+            <li><a href="#" class="footer-link text-small">Gallery</a></li>
+            <li><a href="#" class="footer-link text-small">About us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4 class="lined lined-dark mb-3">Connect us</h4>
+          <ul class="list-inline">
+            <!-- Add font awesome icons -->
+                
+               
+            <li class="list-inline-item"><a href="#" class="fa fa-facebook"></a></i></a></li>
+            <li class="list-inline-item"> <a href="#" class="fa fa-twitter"></a></i></a></li>
+            <li class="list-inline-item"><a href="#" class="fa fa-youtube-square"></a></i></a></li>
+            <li class="list-inline-item"> <a href="#" class="fa fa-instagram"></a></i></a></li>
+            <li class="list-inline-item"> <a href="#" class="fa fa-pinterest"></a></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="lined lined-dark mb-3">News and Updates</h4>
+          <p class="text-muted mb-4 text-small">Sign up to news from us.
+            <form action="#">
+              <div class="input-group mb-3">
+                <input type="text" placeholder="Your email id" aria-label="Recipient's username" aria-describedby="basic-addon2" class="form-control">
+                <div class="input-group-append">
+                  <button id="basic-addon2" type="submit" class="input-group-text"><i class="fas fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </form>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark py-4" style="background-color: gray;">    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left mb-1 mb-lg-0" style="background-color: gray;">
+            <p class="small text-white mb-0">©2021 Best company</p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <p class="small text-white mb-0">Copyright Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

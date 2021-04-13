@@ -1,0 +1,325 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Thiruvananthapuram</title>
+  <link rel="stylesheet" href="style_login.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="child_pages_bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".menu-icon").click(function () {
+        $("nav ul").toggleClass("showing");
+        $("ul li").toggleClass("hide");
+        $(".menu-icon").toggleClass("hide");
+      });
+      // Scrolling Effect
+
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $('nav').addClass('black');
+        }
+
+        else {
+          $('nav').removeClass('black');
+        }
+      });
+    });
+  </script>
+  <style>
+    .banner {
+      height: 100vh;
+      width: 100%;
+      /* Flexbox */
+      display: flex;
+      background-size: cover;
+      /* background: url(./images/portfolio-7.jpg) no-repeat 50% 50%; */
+      /* align-items: center; */
+    }
+
+    h5 {
+      font-family: Lobster monospace;
+      text-align: inherit;
+      background-color: yellow;
+      text-orientation: inherit;
+      /* inline-size: initial; */
+    }
+  </style>
+</head>
+
+
+<header>
+
+  <div class="container-lg"">
+         <h5><center>Coronavirus COVID-19 - Travel Information                 
+            <button> More Info</button> </center>       </h5>
+      </div>  
+      <div class=" container.fluid" id="cont-1">
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="./images/childlogo.png" alt="" class="img-responsive"></a>
+      </div>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div onClick="window.location.href='index.html#main';">Discover</div>
+          </li>
+          <li>
+            <div onClick="window.location.href='index.html#gallery';">Gallery</div>
+          </li>
+          <li><a href="#">Map</a></li>
+          <li><a href="index.html">Login</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+<body>
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">Login Form</div>
+      <div class="title signup">Signup Form</div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">Signup</label>
+        <div class="slider-tab">
+        </div>
+      </div>
+
+      <div class="form-inner">
+        <form action="index.html" method="GET" class="login" name="form11" onsubmit="return login_validated()">
+          <div class="field">
+            <input type="text" placeholder="Email Address" name="email">
+          </div>
+          <div id="email_error">Please fill up your Email or Phone</div>
+          <br>
+          <!-- <label for="error" id="error"></label> -->
+          <div class="field">
+            <input type="password" placeholder="Password" name="pwd">
+          </div>
+          <div id="pass_error">Please fill up your Password</div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer">
+            </div>
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">
+            Not a member? <a href="">Signup now</a></div>
+        </form>
+        <form action="index.html" class="signup" name="form1" onsubmit="return validate()">
+          <div class="field"><input type="text" placeholder="Email Address" name="emailid"><br></div>
+          <div id="emailid_error">Please enter a valid email address</div>
+          <div class="field"><input type="text" placeholder="phone number" name="phone"></div>
+          <div id="ph_error">invalid format</div>
+          <div class="container">
+            <div class="field">
+              <input type="password" onkeyup="trigger()" placeholder="Type password" id="txtpwd" name="txtpwd">
+              <span class="showBtn">SHOW</span>
+            </div>
+            
+            <div class="indicator">
+              <span class="weak"></span>
+              <span class="medium"></span>
+              <span class="strong"></span>
+            </div>
+            <div class="text">
+            </div>
+          </div>
+          <!-- <div class="field">
+            <input type="password" placeholder="Confirm password" required>
+        
+          </div> -->
+          <label>
+            <input type="checkbox" name="terms">By signing up to {this} you agree to your
+             <a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a>
+          </label>
+          <div class="field btn">
+            <div class="btn-layer">
+            </div>
+            <input type="submit" value="Signup">
+          </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="pt-5">
+    <div class="container py-5">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4 class="lined lined-dark mb-3">Popular Categories</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link text-small">Plans</a></li>
+            <li><a href="#" class="footer-link text-small">Discover</a></li>
+            <li><a href="#" class="footer-link text-small">Gallery</a></li>
+            <li><a href="#" class="footer-link text-small">About us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4 class="lined lined-dark mb-3">Connect us</h4>
+          <ul class="list-inline">
+            <!-- Add font awesome icons -->
+
+
+            <li class="list-inline-item"><a href="#" class="fa fa-facebook"></a></i></a></li>
+            <li class="list-inline-item"> <a href="#" class="fa fa-twitter"></a></i></a></li>
+            <li class="list-inline-item"><a href="#" class="fa fa-youtube-square"></a></i></a></li>
+            <li class="list-inline-item"> <a href="#" class="fa fa-instagram"></a></i></a></li>
+            <li class="list-inline-item"> <a href="#" class="fa fa-pinterest"></a></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="lined lined-dark mb-3">News and Updates</h4>
+          <p class="text-muted mb-4 text-small">Sign up to news from us.
+          <form action="#">
+            <div class="input-group mb-3">
+              <input type="text" placeholder="Your email id" aria-label="Recipient's username"
+                aria-describedby="basic-addon2" class="form-control">
+              <div class="input-group-append">
+                <button id="basic-addon2" type="submit" class="input-group-text"><i
+                    class="fas fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </form>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark py-4" style="background-color: gray;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left mb-1 mb-lg-0" style="background-color: gray;">
+            <p class="small text-white mb-0">©2021 Best company</p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <p class="small text-white mb-0">Copyright Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    const indicator = document.querySelector(".indicator");
+    const input = document.querySelector("input");
+    const weak = document.querySelector(".weak");
+    const medium = document.querySelector(".medium");
+    const strong = document.querySelector(".strong");
+    const text = document.querySelector(".text");
+    const showBtn = document.querySelector(".showBtn");
+    let regExpWeak = /[a-z]/;
+    let regExpMedium = /\d+/;
+    let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+    var txtpwd = document.getElementById('txtpwd');
+    function trigger() {
+      if (txtpwd.value != "") {
+        indicator.style.display = "block";
+        indicator.style.display = "flex";
+        if (txtpwd.value.length <= 3 && (txtpwd.value.match(regExpWeak) || txtpwd.value.match(regExpMedium) || txtpwd.value.match(regExpStrong))) no = 1;
+        if (txtpwd.value.length >= 6 && ((txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpMedium)) || (txtpwd.value.match(regExpMedium) && txtpwd.value.match(regExpStrong)) || (txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpStrong)))) no = 2;
+        if (txtpwd.value.length >= 6 && txtpwd.value.match(regExpWeak) && txtpwd.value.match(regExpMedium) && txtpwd.value.match(regExpStrong)) no = 3;
+        if (no == 1) {
+          weak.classList.add("active");
+          text.style.display = "block";
+          text.textContent = "Your password is too weak";
+          text.classList.add("weak");
+        }
+        if (no == 2) {
+          medium.classList.add("active");
+          text.textContent = "Your password is medium";
+          text.classList.add("medium");
+        } else {
+          medium.classList.remove("active");
+          text.classList.remove("medium");
+        }
+        if (no == 3) {
+          weak.classList.add("active");
+          medium.classList.add("active");
+          strong.classList.add("active");
+          text.textContent = "Your password is strong";
+          text.classList.add("strong");
+        } else {
+          strong.classList.remove("active");
+          text.classList.remove("strong");
+        }
+        showBtn.style.display = "block";
+        showBtn.onclick = function show() {
+          if (txtpwd.type == "password") {
+            txtpwd.type = "text";
+            showBtn.textContent = "HIDE";
+            showBtn.style.color = "#23ad5c";
+          } else {
+            txtpwd.type = "password";
+            showBtn.textContent = "SHOW";
+            showBtn.style.color = "#000";
+          }
+        }
+      } else {
+        indicator.style.display = "none";
+        text.style.display = "none";
+        showBtn.style.display = "none";
+      }
+    }
+
+    signupBtn.onclick = (() => {
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+      signupBtn.click();
+      return false;
+    });
+
+  </script>
+  <script src="form.js"></script>
+</body>
+
+</html>
